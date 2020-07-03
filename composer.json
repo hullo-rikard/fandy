@@ -1,0 +1,30 @@
+{
+    "name": "hullo/fandy",
+    "description": "fandy",
+    "require": {
+        "catfan/medoo": "^1.5.6",
+        "stripe/stripe-php": "^6.31",
+        "delight-im/auth": "^4.1",
+        "components/jquery": "^3.1",
+        "google/apiclient": "^2.0",
+        "cloudinary/cloudinary_php": "dev-master",
+        "printnode/printnode-php": "dev-master",
+        "mike42/escpos-php": "dev-master",
+        "php-console/php-console": "^3.1",
+        "firebase/php-jwt": "^5.0",
+        "twilio/sdk": "^5.23",
+        "authy/php": "3.0",
+        "intercom/intercom-php": "^3.2",
+        "aws/aws-sdk-php": "2.*",
+        "sendgrid/sendgrid": "~7",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "scripts": {
+        "deploy:dev": "eb use admin-development && eb deploy",
+        "deploy:prod": "eb use admin-prod-new && eb deploy",
+        "start": "php -S localhost:8080"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
